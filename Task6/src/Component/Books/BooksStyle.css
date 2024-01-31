@@ -1,0 +1,70 @@
+.booksFormat {
+    width: 280px;
+    margin: auto;
+}
+
+.pBook {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24.033px
+}
+
+.pTitle {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49px;
+    text-transform: capitalize;
+    margin-left: 107px;
+    width: max-content;
+}
+
+.iconformt {
+    width: 18px;
+    flex-shrink: 0;
+}
+
+.pageformt {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.format {
+    margin-top: 200px;
+
+}
+
+.nmbrformt {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.starfomt {
+    width: 17px;
+}
+
+.bookbtn {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24.033px;
+    background-color: #937DC2;
+    color: white;
+    border-radius: 2.003px;
+    border: none;
+    margin-top: 12px;
+}
+.bookbtn:hover{
+    background-color:white;
+    color:  #7759b9;
+    border: 1px solid  #7759b9;
+
+}
+.imgformat{
+    height: 372px;
+}
+
+
+@media screen And(max-width:992) {
+
+
+} 

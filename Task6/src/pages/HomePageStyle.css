@@ -1,0 +1,9 @@
+.bgAll {
+    min-height: 100vh;
+    transition: 0.5s;
+}
+
+
+.bgAll.dark {
+    background: #222;
+}

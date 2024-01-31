@@ -1,0 +1,89 @@
+.girlImg {
+    width: 476px;
+    height: 600px;
+    flex-shrink: 0;
+}
+
+.bookInfoSect {
+    gap: 51px;
+    margin-top: 100px;
+}
+
+
+/* --------------------------------------------- */
+
+.H1bookName {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    /* width: max-content; */
+    width: 600px;
+    /* height: 37.37px; */
+}
+
+.autherName {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 27px;
+    width: 112.03px;
+    height: 28.028px;
+}
+
+.bookDesc {
+    text-align: justify;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    width: 691.247px;
+    height: 143.253px;
+    margin-bottom: 110px;
+
+}
+
+.add-Fav {
+    display: flex;
+    width: 333.705px;
+    height: 46.713px;
+    padding: 12px 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background-color: white;
+    color: #937DC2;
+    border: #937DC2 1px solid;
+}
+
+.add-Fav:hover {
+    background-color: #937DC2;
+    color: white;
+    border: none;
+}
+
+.HrFormat {
+    background: #937DC2;
+    width: 691.247px;
+    height: 1px;
+    margin-top: 38px;
+}
+
+
+.pagetitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.033px;
+    color: #C689C6;
+
+}
+
+.pageInfo {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+@media screen And(max-width:992px) {
+  
+}
