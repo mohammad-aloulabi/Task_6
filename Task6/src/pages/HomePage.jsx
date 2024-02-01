@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import NavBar from '../Component/NavBar/NavBar'
 import Books from '../Component/Books/Books'
 import MapComp from '../Component/MapComp/MapComp'
@@ -14,11 +14,15 @@ import star from './../assets/imgs/star.svg'
 import BWorldDark from './../assets/imgs/BWorldDark.png'
 import BWorldLight from './../assets/imgs/BWorldLight.png'
 import './HomePageStyle.css'
+import Info from '../Component/Info/Info'
 
 
 const HomePage = () => {
 
-    const [theme, settheme] = useState('light');
+    // const [theme, settheme] = useState('light');
+    const current_theme = localStorage.getItem('current_theme');
+    const [theme, settheme] = useState(current_theme ? current_theme : 'light');
+    useEffect(()=>{localStorage.setItem('current_theme',theme)},[theme])
 
     return (
 
@@ -27,15 +31,14 @@ const HomePage = () => {
                 descriptionDark={'Dark Mode'} descriptionLight={'light Mode'} MoodIcon={moon} sun={sun} logoMagazin={openmagazine} logoCircle={circle} BWorldDark={BWorldDark} BWorldLight={BWorldLight} theme={theme} settheme={settheme}
             />
 
-            <Hero theme={theme} settheme={settheme}/>
+            <Hero />
             <Books image={bookimg}
                 icon1={bookicon}
                 icon2={star}
-                theme={theme} settheme={settheme}
             />
 
-            <MapComp theme={theme} settheme={settheme}/>
-            <Footer theme={theme} settheme={settheme}/>
+            <MapComp />
+            <Footer />
         </div>
     )
 }

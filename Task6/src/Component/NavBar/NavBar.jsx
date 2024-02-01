@@ -19,9 +19,10 @@ function NavBar({ logoMagazin, logoCircle, title, descriptionLight, descriptionD
         theme == 'light' ? settheme('dark') : settheme('light');
     }
 
+
     return (
 
-        <Navbar expand="lg" className=" d-flex  justify-content-between align-items-center  fixed-top Navformat">
+        <Navbar expand="lg" className={` d-flex  justify-content-between align-items-center  fixed-top ${theme} Navformat`}>
             <Container fluid>
                 <Navbar.Brand ><div className='  ms-5  d-flex align-items-center'><img src={theme == 'light' ? BWorldLight : BWorldDark} /><div className='circle position-relative '><img src={logoCircle} className='logoCircle' /><div className='openmagazine position-absolute  top-50 start-50 translate-middle'><img src={logoMagazin} className='logoMagazin' /></div></div></div></Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
@@ -41,8 +42,9 @@ function NavBar({ logoMagazin, logoCircle, title, descriptionLight, descriptionD
                     </Nav>
                     <div onClick={() => { toggle_mode() }} className='d-flex gap-1 me-5'>
                         <img src={theme == 'light' ? MoodIcon : sun} className='moodicon' />
-                        <Button className='btnNavFormat   border-0' >{theme == 'light' ? descriptionLight : descriptionDark}</Button>
+                        <Button className='btnNavFormat   border-0' >{theme == 'light' ? descriptionDark : descriptionLight}</Button>
                     </div>
+
 
                 </Navbar.Collapse>
             </Container>
